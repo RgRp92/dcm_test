@@ -1,0 +1,56 @@
+{{ block content }}
+<style>
+
+h1 {
+  font-size: 3em;
+   margin-left: auto;
+  margin-right: auto;
+
+}
+
+p {
+  font-size: 1.5em;
+
+}
+li {
+  font-size: 1.5em;
+
+}
+
+</style>
+
+
+<body style=" margin:0px;position:relative; bottom:50px">
+
+<h1> Fase 3 </h1>
+
+<p>
+ Può capitare che:
+</p>
+
+<ul>
+    <li>Con una probabilità di  <b> {{prob_NOT_replace}}%  </b> il tuo compenso <b> venga determianto dalle tue previsioni</b>  nella scheda di scelta estratta nella Fase 1 e 2 </li>
+
+    <li>Con una probabilità di  <b> {{prob_replace}}% </b>  il <b>  tuo compenso </b> <b>venga determianto dalle previsioni dei partecipanti che hanno scelto la stessa opzione come te </b> nella scheda di scelta estratta </li>
+</ul>
+<p>
+Ad esempio, se tu hai scelto l'Opzione {{Constants.random_practice_alternative}} nella scheda di scelta estratta, con un probabilità di {{prob_replace}}% le tue previsioni verranno sostituite con quelle dei partecipanti che hanno scelto l'Opzione {{Constants.random_practice_alternative}}
+    nella scheda di scelta estratta (proprio come te)
+</p>
+
+
+<br>
+<br>
+
+
+
+
+
+</body>
+
+
+    {{ next_button }}
+
+
+
+{{ endblock }}

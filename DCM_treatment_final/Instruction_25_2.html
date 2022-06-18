@@ -1,0 +1,55 @@
+{{ block content }}
+<style>
+
+h1 {
+  font-size: 3em;
+   margin-left: auto;
+  margin-right: auto;
+
+}
+
+p {
+  font-size: 1.5em;
+
+}
+li {
+  font-size: 1.5em;
+
+}
+
+</style>
+
+
+<body style=" margin:0px;position:relative; bottom:50px">
+
+
+
+<p> Ci sono altri {{num_participants}} partecipanti nella sessione di oggi, escludendo te stesso </p>
+
+<p> Nella Sezione 2 ti verrà chiesto di <b> predire il numro di partecipanti </b>
+    (sul totale di {{num_participants}}) che <b> hanno scelto ciascuna opzione </b> ( A, B e C)
+    in ognunna delle {{Constants.num_CE}} schede di scelta che ti sono mostrate nella <b> Sezione 1 </b>
+</p>
+
+<p> Otterrai un<b> compenso aggiuntivo </b> in base a quanto <b> accurate saranno le tue previsioni</b>
+</p>
+<p>
+Puoi ottenere un compenso aggiuntivo da minimo €{{min_income}} a massimo €{{max_income}}
+</p>
+
+<br>
+<br>
+
+
+
+
+
+
+</body>
+
+
+    {{ next_button }}
+
+
+
+{{ endblock }}

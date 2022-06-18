@@ -1,0 +1,60 @@
+{{ block content }}
+<style>
+
+h1 {
+  font-size: 3em;
+   margin-left: auto;
+  margin-right: auto;
+
+}
+
+p {
+  font-size: 1.5em;
+
+}
+li {
+  font-size: 1.5em;
+
+}
+
+</style>
+
+
+<body style=" margin:0px;position:relative; bottom:50px">
+
+
+<p>
+Per determinare se i tuoi compensi sono calcolati sulla base delle tue previsioni oppure no, verrà usata una ruota della fortuna come quella in figura.
+</p>
+ <img src= "{{static 'spinning_wheel_1.jpg' }}" style="width:40%; position:relative; left:600px; bottom:40px " />
+
+<div class="myDiv" style=" position:relative;right:0px; bottom: 370px;width:60%">
+<ul>
+    <li> La ruota verrà fatta girare.</li>
+    <li> Se la freccia termina nella  <b> area blu  </b> , allora <b> le tue previsioni NON saranno sostituite </b></li>
+<br>
+    <li> Se la freccia termina nella   <b> area viola  </b> , allora <b> le tue previsioni saranno sostituite </b></li>
+</ul>
+
+</div>
+
+    <p style=" position:relative;right:0px; bottom: 350px;width:70%" >
+Note that there is a probability of {{prob_not_replace}}% that your beliefs will not be replaced and a probability of {{prob_replace}}% that your beliefs will be replaced
+</p>
+
+<br>
+<br>
+
+
+
+
+
+
+</body>
+
+
+    {{ next_button }}
+
+
+
+{{ endblock }}

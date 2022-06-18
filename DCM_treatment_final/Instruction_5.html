@@ -1,0 +1,46 @@
+{{ block content }}
+<style>
+
+h1 {
+  font-size: 3em;
+   margin-left: auto;
+  margin-right: auto;
+
+}
+
+p {
+  font-size: 1.5em;
+
+}
+
+li {
+  font-size: 1.5em;
+
+}
+</style>
+
+
+<body style=" margin:0px;position:relative; bottom:50px">
+
+
+<h1 style="width:100%;"> Panoramica dello studio </h1 >
+
+<br>
+<p> <span style="color:red"> <b>Nella Parte 1</b>  </span> ci sono due sezioni da completare: </p>
+
+<p>Nella <b>Sezione 1</b>: dovrai esprimere le tue <b> preferenze</b> su alcuni progetti alternativi di installazione di
+    tetti verdi a Trento  </p>
+
+<p>Nella  <b>Sezione 2</b>: dovrai esprimere <b> la tua opinione riguardo le preferenze degli altri partecipanti allo studio
+    </b>.</p>
+
+<p>Avrai l'opportunità di ottenere un compenso monetario aggiuntivo dalla Sezione 2 in base alle tue sccelte</p>
+
+<p> Puoi ottenere un  <b>minimo di €{{min_income}}</b> e  <b>massimo di €{{max_income}}</b>. </p>
+
+</body>
+  <button name="btn_submit" value="True" class="btn btn-primary btn-large" >
+                  <span style="font-size:12pt">Avanti</span>
+             </button>
+
+{{ endblock }}

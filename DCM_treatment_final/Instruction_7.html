@@ -1,0 +1,33 @@
+{{ block content }}
+<style>
+
+h1 {
+  font-size: 3em;
+   margin-left: auto;
+  margin-right: auto;
+
+}
+
+p {
+  font-size: 1.5em;
+
+}
+
+
+</style>
+
+
+<body style=" margin:0px;position:relative; bottom:50px">
+
+
+<h1 style="width:100%;">Compenso finale</h1 >
+
+<br>
+<p style="color:red"><b> Il tuo compenso finale sarà di:</b>   </p>
+
+<p > €10 più il compenso ottenuto <b>nella Sezione 2 della Parte 1</b> che può variare da €{{min_income}} a €{{max_income}} </p>
+
+</body>
+
+    {{ next_button }}
+{{ endblock }}
